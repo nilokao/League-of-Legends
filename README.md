@@ -4,7 +4,7 @@ By: Miguel Avila de Oliveira <img src="https://i.pinimg.com/originals/29/b8/1b/2
 
 
 * Competências Utilizadas:
-HTML, CSS, JAVASCRIPT, Python SQLite, e Ajax.
+HTML, CSS, JAVASCRIPT, Python, SQLite, e Ajax.
 
 ### Interface:
 * #### Página Inicial:
@@ -13,3 +13,6 @@ A página inicial é constituída basicamente por uma "sticky navbar", e 3 seç�
 One Page simples onde será apresentada alguns campeões dos quais nós gostamos, em ordem alfabética, onde os campeões poderão ser selecionados e será mostrada uma visualização detalhada do mesmo.
 * #### Página de Simulador:
 One Page onde poderemos simular a tabela do CBLOL de acordo com nossos palpites e ver os confrontos que ocorrerão caso se concretize.
+
+
+<img src="https://dl.phncdn.com/gif/36542591.gif" height="1080" width="1080">
