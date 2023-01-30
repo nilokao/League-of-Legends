@@ -1,4 +1,5 @@
-# Projeto: Legends Never Die  <img src="https://media.tenor.com/sI63okQPjDkAAAAC/kaisa-league-of-legends.gif" height="50" width="50">
+# Projeto: Legends Never Die
+<img src="https://media.tenor.com/sI63okQPjDkAAAAC/kaisa-league-of-legends.gif" height="50" width="50">
 Projeto do site que possui uma página inicial, de campeões e um simulador do CBLOL. </br>
 By: Miguel Avila de Oliveira e Nicolas Monteiro Longo.
 
