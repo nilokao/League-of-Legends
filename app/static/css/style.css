@@ -1,0 +1,366 @@
+html{
+  scroll-behavior: smooth;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Secular One', sans-serif;
+}
+
+li a {
+  margin: 15px;
+  color: whitesmoke;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+p{
+  font-size: 24px;
+  line-height: 50px;
+}
+
+h1{
+  font-size: 50px;
+  font-family: 'Secular One', sans-serif;
+} 
+
+#navbar{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #262626;
+  width: 100%;
+  height: 70px;
+  z-index: 1;
+}
+
+#navbar a, p{
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.nav{
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  margin-right: 15%;
+}
+
+#navbar li{
+  -webkit-transform: all 0.7s ease;
+  transition: all 0.7 ease;
+  overflow: hidden;
+}
+
+#navbar li:hover{
+  transition: 0.2s;
+  -webkit-transform: scale(1.2);
+  transition: scale(1.2);
+}
+
+.logo{
+  flex: 1 1 auto;
+  margin-left: 10%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 32px;
+  color: whitesmoke;
+} 
+
+#navbar a:hover{
+  transition: .5s ease;
+  color: #eccf41;
+}
+
+.mySlides {
+  display:none;
+  width: 100%;
+  height: 1080px;
+}
+
+.mySlides:not(:first-of-type){
+   display: none;
+}
+
+#champions-area, #simulator-area{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+
+.text-part h1{
+  font-size: 100px;
+}
+
+.text-part p{
+  font-size: 30px;
+  margin-top: -50px;
+  margin-bottom: 75px;
+}
+
+#champions-area{
+  background: whitesmoke;
+}
+
+#champions-area p{
+  color: black;
+}
+
+#simulator-area{
+  background: #262626;
+  color: whitesmoke;
+}
+
+.text-part{
+  width: 65%;
+  height: 80%;
+}
+
+.botao{
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 350px;
+  cursor: pointer;
+  font-family: 'Secular One', sans-serif;
+}
+
+.botao span {
+  position: relative;
+  transition: 0.5s;
+}
+
+.botao span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.botao:hover span {
+    padding-right: 25px;
+}
+
+.botao:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.botao#b1{
+  background-color: #262626;
+  color: white;
+}
+
+.botao#b1:hover{
+  transition: background-color 1s;
+  background-color: #504d4d;
+}
+
+.botao#b2{
+  background-color: whitesmoke;
+  color: #262626;
+}
+
+.botao#b2:hover{
+  transition: background-color 1s;
+  background-color: #faf9f6;
+}
+
+.champions-box{
+  padding-top: 110px;
+  background-color: whitesmoke;
+}
+
+.campeoes-img{
+  width: 200px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.container{
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 200px;
+  height: 350px;
+  position: relative;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #262626;
+  overflow: hidden;
+  width: 200px;
+  height: 0;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.container:hover .overlay {
+  height: 175px;
+  opacity: 0.9;
+}
+
+.nome_campeoes{
+  font-family: 'Secular One', sans-serif;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+.descricao_campeoes{
+  font-family: 'Secular One', sans-serif;
+  margin-top: -40px;
+  margin-left: 10px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+#champions-row{
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  width: 100%;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+
+#big-container{
+  width: 100%;
+  position: absolute;
+}
+
+#orgs-container{
+  width: 50%;
+  height: 100vh;
+  padding-top: 70px;
+  background-color: #262626;
+  float: left;
+  text-align: center;
+}
+
+.org{
+  width: 130px;
+  height: 130px;
+  padding: 10px;
+  border-radius: 90px;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.org:hover{
+  background-color: #eccf41;
+  transition: 0.5s;
+}
+
+#img-intz{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+#orgs-container ul{
+  width: 100%;
+  margin-left: -40px;
+  margin-top: -30px;
+  display: inline;
+}
+
+#orgs-container li{
+  display: inline;
+}
+
+#tournament{
+  padding-top: 70px;
+  background: whitesmoke;
+  max-width: 50%;
+  height: 100vh;
+  float: right;
+  text-align: center;
+  width: 100%;
+}
+
+#tournament ul{
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+#tournament li{
+  display: inline-flex;
+}
+
+.titulo{
+  color: whitesmoke;
+}
+
+.position{
+  width: 160px;
+  height: 160px;
+  border: solid #262626;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+
+.position-team{
+  width: 100%;
+  height: 100%;
+}
+
+#tournament p{
+  margin-top: -50px;
+  color:  #262626;
+  text-align: center;
+}
+
+#tournament img{
+  margin-top: -19px;
+}
+
+#error-body{
+  background-image: url(../img/error.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: whitesmoke;
+  font-family: 'Secular One', sans-serif;
+}
+
+body h1 .error{
+  margin: 0;
+  padding: 0;
+  font-size: 250px;
+}
+
+.text-error{
+  justify-content: center;
+  text-align: center;
+}
+
+#b3{
+  background-color: whitesmoke;
+  opacity: 0.8;
+}
+#server-intz{
+    height: 150px;
+    width: 300px;
+}

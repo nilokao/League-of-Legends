@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>League of Legends - Campeões e Simulador CBLOL</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+    <!--Front-->
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/android-chrome-192x192.png">
+    <!--Back-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/icons/android-chrome-192x192.png') }}">
+
+</head>
+
+<body>
+  
+  <div id="navbar">
+    <h1 class="logo">League of Legends</h1>
+    <ul class="nav">
+      <li><a href="#slideshow">Home</a></li>
+      <li><a href="#champions-area">Campeões</a></li>
+      <li><a href="#simulator-area">Simulador</a></li>
+    </ul>
+  </div>
+  
+  <div id="slideshow">
+      <img class="mySlides" src="../static/img/carousel/gwen.jpg">
+      <img class="mySlides" src="../static/img/carousel/irelia.jpg">
+      <img class="mySlides" src="../static/img/carousel/sett.jpg">
+      <img class="mySlides" src="../static/img/carousel/gnar.jpg">
+      <img class="mySlides" src="../static/img/carousel/nami.jpg">
+      <img class="mySlides" src="../static/img/carousel/ahri.jpg">
+      <img class="mySlides" src="../static/img/carousel/ziggs.jpg">
+      <img class="mySlides" src="../static/img/carousel/varus.jpg">
+      <img class="mySlides" src="../static/img/carousel/lucian.jpg">
+      <img class="mySlides" src="../static/img/carousel/senna.jpg">
+  </div>
+
+  <script type="text/javascript" src="../static/js/script.js"></script>
+  
+  <div id="champions-area" id="champions">
+    <div class="text-part">
+      <h1>Campeões</h1>
+      <p>Escolha seu campeão. Com mais de 140 Campeões, você encontrará a combinação perfeita para seu estilo de jogo. Especialize-se em um estilo ou em todos.</p>
+      <a href="{{ url_for('champions_page') }}"><button class="botao" id="b1"><span>Descubra campeões</span></button></a>
+    </div>
+  </div>
+  
+  <div id="simulator-area" id="simulator">
+    <div class="text-part">
+      <h1>Simulador</h1>
+      <p>Quem irá ao mata-mata? E quem levantará a taça? Dê seus palpites e compartilhe!</p>
+      <a href="{{ url_for('simulator_page') }}"><button class="botao" id="b2"><span>Simule o CBLOL</span></button></a>
+    </div>
+  </div>
+
+</body>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página não encontrada</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <!--Front-->
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/android-chrome-192x192.png">
+    <!--Back-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/icons/android-chrome-192x192.png') }}">
+</head>
+
+
+<body id="error-body">
+
+	<div class="text-error">
+		<h1 class="error">404</h1>
+		<p class="error">Essa página não foi encontrada...</p>
+		<a href="{{ url_for('initial_page') }}"><button class="botao" id="b3"><span>Voltar</span></button></a>
+	</div>
+
+</body>
+</html>

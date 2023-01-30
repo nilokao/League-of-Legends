@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>League of Legends - Campeões e Simulador CBLOL</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+	<!--Front-->
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/android-chrome-192x192.png">
+    <!--Back-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/icons/android-chrome-192x192.png') }}">
+</head>
+
+<body>
+	<div id="navbar">
+	    <h1 class="logo"><a href="{{ url_for('initial_page') }}">League of Legends</a></h1>
+	    <ul class="nav">
+	      <li><a href="{{ url_for('initial_page') }}">Home</a></li>
+	      <li><a href="{{ url_for('champions_page') }}">Campeões</a></li>
+	      <li><a href="{{ url_for('simulator_page') }}">Simulador</a></li>
+	    </ul>
+  	</div>
+
+  	<audio id="amumu-audio"><source src="../static/audios/amumu.mp3" type="audio/mpeg"></audio>
+  	<audio id="lulu-audio"><source src="../static/audios/lulu.mp3" type="audio/mpeg"></audio>
+
+
+  	<table id="champions-row">
+  		<tr>
+  			<td>
+			  	<div class="container">
+			 			<img src="../static/img/champions/ahri.jpg" class="campeoes-img" style="object-position: 70%;">
+				  	<div class="overlay">
+				  		<p class="nome_campeoes">Ahri</p>
+				  		<p class="descricao_campeoes">____ é um(a) campeão(ã) de ____, da classe ____ que geralmente joga na rota ____.</p>
+				  	</div>
+			  	</div>
+		  	</td>
+
+  			<td>
+			  	<div class="container" onclick="som_amumu()">
+			 			<img src="../static/img/champions/amumu.jpg" class="campeoes-img" style="object-position: 75%;">
+				  	<div class="overlay">
+				  		<p class="nome_campeoes">Amumu</p>
+				  		<p class="descricao_campeoes">____ é um(a) campeão(ã) de ____, da classe ____ que geralmente joga na rota ____.</p>
+				  	</div>
+				  </div>
+		  	</td>
+
+		  	<td>
+			  	<div class="container">
+			 			<img src="../static/img/champions/braum.jpg" class="campeoes-img" style="object-position: 82%;">
+				  	<div class="overlay">
+				  		<p class="nome_campeoes">Braum</p>
+				  		<p class="descricao_campeoes">____ é um(a) campeão(ã) de ____, da classe ____ que geralmente joga na rota ____.</p>
+				  	</div>
+			  	</div>
+		  	</td>
+
+				<td>
+			  	<div class="container">
+			 			<img src="../static/img/champions/ezreal.jpg" class="campeoes-img" style="object-position: 65%;">
+				  	<div class="overlay">
+				  		<p class="nome_campeoes">Ezreal</p>
+				  		<p class="descricao_campeoes">____ é um(a) campeão(ã) de ____, da classe ____ que geralmente joga na rota ____.</p>
+				  	</div>
+			  	</div>
+		  	</td>
+
+		  	<td>
+			  	<div class="container">
+			 			<img src="../static/img/champions/heimer.jpg" class="campeoes-img" style="object-position: 78%;">
+				  	<div class="overlay">
+				  		<p class="nome_campeoes">Heimerdinger</p>
+				  		<p class="descricao_campeoes">____ é um(a) campeão(ã) de ____, da classe ____ que geralmente joga na rota ____.</p>
+				  	</div>
+			  	</div>
+		  	</td>
+			</tr>
+
+			<tr>
+  			<td>
+			  	<div class="container">
+			 			<img src="../static/img/champions/ivern.jpg" class="campeoes-img" style="object-position: 55%;">
+				  	<div class="overlay">
+				  		<p class="nome_campeoes">Ivern</p>
+				  		<p class="descricao_campeoes">____ é um(a) campeão(ã) de ____, da classe ____ que geralmente joga na rota ____.</p>
+				  	</div>
+			  	</div>
+		  	</td>
+
+  			<td>
+			  	<div class="container">
+			 			<img src="../static/img/champions/jinx.jpg" class="campeoes-img" style="object-position: 80%;">
+				  	<div class="overlay">
+				  		<p class="nome_campeoes">Jinx</p>
+				  		<p class="descricao_campeoes">____ é um(a) campeão(ã) de ____, da classe ____ que geralmente joga na rota ____.</p>
+				  	</div>
+				  </div>
+		  	</td>
+
+		  	<td>
+			  	<div class="container">
+			 			<img src="../static/img/champions/kindred.jpg" class="campeoes-img" style="object-position: 80%;">
+				  	<div class="overlay">
+				  		<p class="nome_campeoes">Kindred</p>
+				  		<p class="descricao_campeoes">____ é um(a) campeão(ã) de ____, da classe ____ que geralmente joga na rota ____.</p>
+				  	</div>
+			  	</div>
+		  	</td>
+
+				<td>
+			  	<div class="container" onclick="som_lulu()">
+			 			<img src="../static/img/champions/lulu.jpg" class="campeoes-img" style="object-position: 82%;">
+				  	<div class="overlay">
+				  		<p class="nome_campeoes">Lulu</p>
+				  		<p class="descricao_campeoes">____ é um(a) campeão(ã) de ____, da classe ____ que geralmente joga na rota ____.</p>
+				  	</div>
+			  	</div>
+		  	</td>
+
+		  	<td>
+			  	<div class="container">
+			 			<img src="../static/img/champions/mordekaiser.jpg" class="campeoes-img" style="object-position: 45%;">
+				  	<div class="overlay">
+				  		<p class="nome_campeoes">Mordekaiser</p>
+				  		<p class="descricao_campeoes">____ é um(a) campeão(ã) de ____, da classe ____ que geralmente joga na rota ____.</p>
+				  	</div>
+			  	</div>
+		  	</td>
+			</tr>
+	  </table>
+
+	<script type="text/javascript">
+		var amumu = document.getElementById("amumu-audio");
+		var lulu = document.getElementById("lulu-audio");
+
+		function som_amumu(){
+			amumu.play();
+		}
+
+		function som_lulu(){
+			lulu.play();
+		}
+
+	</script>
+
+</body>
+</html>

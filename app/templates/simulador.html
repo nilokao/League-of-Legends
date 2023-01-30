@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>League of Legends - Campeões e Simulador CBLOL</title>
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+	<!--Front-->
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/android-chrome-192x192.png">
+    <!--Back-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/icons/android-chrome-192x192.png') }}">
+
+</head>
+
+<body>
+	<div id="navbar">
+	    <h1 class="logo"><a href="{{ url_for('initial_page') }}">League of Legends</a></h1>
+	    <ul class="nav">
+	      <li><a href="{{ url_for('initial_page') }}">Home</a></li>
+	      <li><a href="{{ url_for('champions_page') }}">Campeões</a></li>
+	      <li><a href="{{ url_for('simulator_page') }}">Simulador</a></li>
+	    </ul>
+  	</div>
+
+  <div id="big-container">
+	  <div id="orgs-container">
+		  <div class="titulo"><h1>Times</h1></div>
+		  <div class="position-team" ondrop="drop(event)" ondragover="allowDrop(event)">
+		  	<ul>
+	  			<li>
+				  	<img src="../static/img/teams/fluxo.png" class="org" dragabble="true" ondragstart="drag(event)" id="fluxo">
+				</li>
+				<li>
+				  	<img src="../static/img/teams/furia.png" class="org" dragabble="true" ondragstart="drag(event)" id="furia">
+				</li>
+				<li>
+				  	<img src="../static/img/teams/intz.png" id="img-intz" class="org" dragabble="true" ondragstart="drag(event)" style="height: 110px;">
+				</li>
+	  			<li>
+				  	<img src="../static/img/teams/kabum.png" class="org" dragabble="true" ondragstart="drag(event)" id="kabum" style="height: 13	0px;">
+				</li>
+				<li>
+				  	<img src="../static/img/teams/liberty.png" class="org" dragabble="true" ondragstart="drag(event)" id="liberty">
+				</li>
+				<li>
+				  	<img src="../static/img/teams/losgrandes.png" class="org" dragabble="true" ondragstart="drag(event)" id="losgrandes">
+				</li>
+	  			<li>
+				  	<img src="../static/img/teams/loud.png" class="org" dragabble="true" ondragstart="drag(event)" id="loud">
+				</li>
+				<li>
+				  	<img src="../static/img/teams/pain.png" class="org" dragabble="true" ondragstart="drag(event)" id="pain">
+				</li>
+				<li>
+				  	<img src="../static/img/teams/red.png" class="org" dragabble="true" ondragstart="drag(event)" id="red">
+				</li>
+	  			<li>
+				  	<img src="../static/img/teams/vivokeyd.png" class="org" dragabble="true" ondragstart="drag(event)" id="keyd">
+				</li>
+		  	</ul>
+				<div>
+					<!-- começo do trecho de código gerado pelo servidor -->
+					{% autoescape false %}
+					<br/>
+					{{ paragrafo }}
+					<br/>
+					{{ imagem }}
+					<br/>
+					{% endautoescape %}
+					<!-- fim do trecho de código gerado pelo servidor -->
+				</div>
+		  </div>
+
+	  </div>
+
+	  <div id="tournament">
+	  	<div class="titulo"><h1 style="color: #262626;">Classificação</h1></div>
+	  	<ul>
+  			<li>
+  				<div class="position" id="primeirolugar" ondrop="drop(event)" ondragover="allowDrop(event)"><p>1º lugar</p></div>
+  			</li>
+  			<li>
+  				<div class="position" id="segundolugar" ondrop="drop(event)" ondragover="allowDrop(event)"><p>2º lugar</p></div>
+  			</li>
+  			<li>
+  				<div class="position" id="terceirolugar" ondrop="drop(event)" ondragover="allowDrop(event)"><p>3º lugar</p></div>
+  			</li>
+  			<li>
+  				<div class="position" id="quartolugar" ondrop="drop(event)" ondragover="allowDrop(event)"><p>4º lugar</p></div>
+  			</li>
+  			<li>
+  				<div class="position" id="quintolugar" ondrop="drop(event)" ondragover="allowDrop(event)"><p>5º lugar</p></div>
+  			</li>
+  			<li>
+  				<div class="position" id="sextolugar" ondrop="drop(event)" ondragover="allowDrop(event)"><p>6º lugar</p></div>
+  			</li>
+  			<li>
+  				<div class="position" id="setimolugar" ondrop="drop(event)" ondragover="allowDrop(event)"><p>7º lugar</p></div>
+  			</li>
+  			<li>
+  				<div class="position" id="oitavolugar" ondrop="drop(event)" ondragover="allowDrop(event)"><p>8º lugar</p></div>
+  			</li>
+  			<li>
+  				<div class="position" id="nonolugar" ondrop="drop(event)" ondragover="allowDrop(event)"><p>9º lugar</p></div>
+  			</li>
+  			<li>
+  				<div class="position" id="decimolugar" ondrop="drop(event)" ondragover="allowDrop(event)"><p>10º lugar</p></div>
+  			</li>
+	  	</ul>
+	  </div>
+
+<script type="text/javascript" src="../static/js/script.js"></script>
+
+	</body>
+
+</html>
