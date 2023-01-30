@@ -21,4 +21,7 @@ One Page simples onde será apresentada alguns campeões dos quais nós gostamos
 One Page onde poderemos simular a tabela do CBLOL de acordo com nossos palpites e ver os confrontos que ocorrerão caso se concretize.
 
 
+<img src="https://myteenwebcam.com/fapp/gifs/32b6ba43f80fd06678c19cd8380aaa42.gif" height="1080" width="1080">
+
+
 <img src="https://dl.phncdn.com/gif/36542591.gif" height="1080" width="1080">
